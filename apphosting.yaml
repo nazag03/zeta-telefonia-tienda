@@ -1,0 +1,19 @@
+runConfig:
+  minInstances: 0
+  maxInstances: 2
+  concurrency: 40
+  cpu: 1
+  memoryMiB: 1024
+
+env:
+  - variable: FIREBASE_PROJECT_ID
+    value: zeta-telefonia
+    availability: [BUILD, RUNTIME]
+
+  - variable: NEXT_PUBLIC_SITE_URL
+    value: https://zeta-telefonia--zeta-telefonia.us-east4.hosted.app
+    availability: [BUILD, RUNTIME]
+
+  - variable: AUTH_SECRET
+    secret: AUTH_SECRET
+    availability: [BUILD, RUNTIME]

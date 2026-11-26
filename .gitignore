@@ -1,0 +1,21 @@
+node_modules
+.next
+out
+.env
+.env.local
+*.db
+*.db-journal
+storage/uploads/*
+!storage/uploads/.gitkeep
+next-env.d.ts
+*.tsbuildinfo
+
+# Credenciales de Firebase (nunca subir)
+firebase-service-account*.json
+*-firebase-adminsdk-*.json
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# Backups de la base (datos privados)
+backups/
